@@ -1,0 +1,8 @@
+/* Custom styles for hero image */
+.VPImage.image-src {
+    max-width: 600px !important;
+}
+
+.VPHero .image-container {
+    max-width: 600px !important;
+}
