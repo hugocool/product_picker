@@ -1,30 +1,40 @@
-# Product Picker (Pendant Chooser)
+# Product Picker
 
-A pairwise ranking application for pendant images using TrueSkill Bayesian rating and Gradio UI.
+*A Bayesian tool for discovering your true preferences*
+
+Product Picker is a pairwise comparison application designed to help you make decisions when faced with too many options. Originally built to solve a Valentine's Day "Pendant Problem," it uses Microsoft's **TrueSkill** algorithm—the same system used for Xbox matchmaking—to learn your subjective taste through simple "A or B" choices.
+
+## 📖 The Story & The Math
+
+I wrote a three-part blog series explaining the journey from a folder full of 237 pendants to a Bayesian-powered ranking app:
+
+1. [Part 1: The Pendant Problem](./blog/part1-the-pendant-problem.md) — Motivation and why pairwise comparison beats absolute ratings.
+2. [Part 2: TrueSkill Demystified](./blog/part2-trueskill-demystified.md) — How $\mu$ (appeal) and $\sigma$ (uncertainty) model your taste.
+3. [Part 3: The Pair Selection Puzzle](./blog/part3-pair-selection-puzzle.md) — Active learning, $E[\Delta\sigma]$, and Thompson Sampling.
 
 ## Features
 
-- 🖼️ Scans folders of pendant images (supports JPG, PNG, WEBP, BMP, TIFF)
-- 💾 Stores metadata and ratings in SQLite via SQLModel
-- 🎯 Side-by-side comparison UI using Gradio
-- 📊 TrueSkill Bayesian rating system (successor to Elo)
-- 🏆 Real-time leaderboard with conservative scores (μ - 3σ)
-- 📈 Match history tracking
+- 🖼️ **Visual Discovery**: Scans any folder of images (JPG, PNG, WEBP, etc.)
+- 🎯 **Preference Learning**: Learns your taste through natural "Which do you like more?" choices.
+- 📊 **TrueSkill Algorithm**: Bayesian rating system that tracks both what you like and how confident it is.
+- 🏆 **Stable Leaderboard**: Uses Conservative Scores ($\mu - 3\sigma$) to ensure top results are battle-tested favorites.
+- 📈 **Active Learning**: Intelligently picks pairs that teach the algorithm the most about your preferences.
+- 💾 **SQLite Persistence**: Your rankings and match history are saved locally in the image folder.
 
 ## Installation
 
 ```bash
-# Install with uv (recommended - fast and modern)
+# Clone the repository
+git clone https://github.com/hugocool/product_picker.git
+cd product_picker
+
+# Install with uv (recommended)
 uv sync
 
-# Or with pip (traditional)
+# Or with pip
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 pip install -r requirements.txt
-
-# For development (includes Jupyter)
-uv sync --extra dev
-# Or: pip install -r requirements-dev.txt
 ```
 
 ## Usage
