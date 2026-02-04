@@ -1,5 +1,0 @@
-gradio>=4.0.0
-sqlmodel>=0.0.14
-trueskill>=0.4.5
-pillow>=10.0.0
-pandas>=2.0.0
