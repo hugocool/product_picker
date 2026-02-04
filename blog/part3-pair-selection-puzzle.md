@@ -401,7 +401,7 @@ Sometimes the best way to learn is to have a problem you actually care about sol
 
 ---
 
-*The full source code is available at [github.com/hugoevers/product_picker](https://github.com/hugoevers/product_picker)*
+*The full source code is available at [github.com/hugocool/product_picker](https://github.com/hugocool/product_picker)*
 
 *Previous: [Part 2 - TrueSkill Demystified](./part2-trueskill-demystified.md)*
 

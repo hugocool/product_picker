@@ -107,7 +107,7 @@ This isn't just a pendant picker—you can use it to choose between *anything*. 
 
 **Getting started is simple:**
 
-1. Clone the repository: `git clone https://github.com/hugoevers/product_picker`
+1. Clone the repository: `git clone https://github.com/hugocool/product_picker`
 2. Follow the README instructions to set up the environment
 3. Launch the app and point it to a folder containing images of your options
 4. Start comparing! The algorithm will guide you to discover your true preferences
