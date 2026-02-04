@@ -1,8 +1,47 @@
-/* Custom styles for hero image */
-.VPImage.image-src {
-    max-width: 600px !important;
+/* Custom styles for hero section */
+:root {
+    --vp-home-hero-image-filter: none;
 }
 
-.VPHero .image-container {
-    max-width: 600px !important;
+/* Better hero layout - side-by-side on desktop */
+@media (min-width: 960px) {
+    .VPHero .container {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .VPHero .main {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .VPHero .image {
+        flex: 1;
+        max-width: 550px;
+        margin: 0;
+    }
+
+    .VPHero .image-container {
+        transform: none !important;
+    }
+
+    .VPImage.image-src {
+        border-radius: 12px;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+        max-width: 100% !important;
+    }
+}
+
+/* Mobile - stack vertically */
+@media (max-width: 959px) {
+    .VPHero .image {
+        margin-top: 2rem;
+    }
+
+    .VPImage.image-src {
+        max-width: 100% !important;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
 }
