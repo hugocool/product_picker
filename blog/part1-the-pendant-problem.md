@@ -16,6 +16,17 @@ And I cannot, for the life of me, figure out which one to buy.
 
 ---
 
+## The Solution
+
+So I built a tool that helped me decide. In just 47 comparisons—less than 5 minutes—it learned my preferences and revealed my top choice.
+
+![The Pendant Picker comparison interface](/screenshots/comparison_interface.png)
+*Figure 1: The Pendant Picker in action. Click which pendant you prefer—the algorithm learns your taste through simple pairwise comparisons and reveals your true favorites.*
+
+Here's how this works, and why it's surprisingly powerful.
+
+---
+
 ## The Rating Trap
 
 My first instinct was obvious: rate everything on a 1-5 scale. Open a spreadsheet, go through each pendant, assign a score, sort by rating, done.
@@ -92,12 +103,7 @@ The system I eventually built combines two powerful ideas from the world of comp
 
 2. **Active Learning**[^4] — A branch of machine learning about asking the *right* questions. Instead of random sampling, actively choose the most informative data points.
 
-The result? An app that shows me two pendants, I click which one I prefer, and it learns. Fast.
-
-![The Pendant Picker comparison interface](/screenshots/comparison_interface.png)
-*Figure 1: The app presents two pendants side-by-side. Click the pendant you prefer, choose "Draw" if they're equal, or "Skip" to move on. The algorithm uses each choice to update its beliefs about all items.*
-
-After just 47 comparisons—less than 0.2% of all possible pairs—the ranking had stabilized. My top 3 were clearly separated from the pack. I had my answer.
+The result? An app that shows me two pendants, I click which one I prefer, and it learns. Fast. After just 47 comparisons—less than 0.2% of all possible pairs—the ranking had stabilized. My top 3 were clearly separated from the pack. I had my answer.
 
 ---
 
