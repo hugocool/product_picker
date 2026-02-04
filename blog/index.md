@@ -22,5 +22,5 @@ features:
   - title: Bayesian Intelligence
     details: Uses TrueSkill and Active Learning to understand your preferences fast.
   - title: Proven Math
-    details: Based on Microsoft's TrueSkill and Information Theory (E[Δσ]).
+    details: Based on Microsoft's TrueSkill and Information Theory ($E[\Delta\sigma]$).
 ---

@@ -221,7 +221,7 @@ Thompson Sampling is a natural **explore-exploit balance**: uncertain items get 
 
 ## The Hybrid Approach
 
-Pure EΔσ is too greedy. Pure Thompson is too random.
+Pure $E[\Delta\sigma]$ is too greedy. Pure Thompson is too random.
 
 **Solution: combine them.**
 
@@ -240,12 +240,12 @@ return best
 
 The hybrid approach:
 
-- **75% of the time**: Pure EΔσ on all pairs (greedy, efficient)
-- **25% of the time**: Thompson Sampling to generate candidates, then EΔσ to pick the best
+- **75% of the time**: Pure $E[\Delta\sigma]$ on all pairs (greedy, efficient)
+- **25% of the time**: Thompson Sampling to generate candidates, then $E[\Delta\sigma]$ to pick the best
 
 This gives us:
 
-- **Efficiency** from greedy EΔσ selection
+- **Efficiency** from greedy $E[\Delta\sigma]$ selection
 - **Exploration** from Thompson's posterior sampling
 - **No loops** (Thompson adds randomness)
 - **Principled** (everything is Bayesian)
